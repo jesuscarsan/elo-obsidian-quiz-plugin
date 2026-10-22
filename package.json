@@ -1,0 +1,44 @@
+{
+  "name": "elo-obsidian-quiz-plugin",
+  "version": "0.0.2",
+  "description": "Obsidian plugin for Quiz and Chat functionality",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "npm run typecheck && node scripts/esbuild.config.mjs",
+    "dev": "node ../../libs/obsidian-plugin/scripts/bump-version.js && node scripts/esbuild.config.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "quiz",
+    "chat"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@elo/obsidian-plugin": "workspace:*",
+    "@types/jest": "^30.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "js-yaml": "^4.1.1",
+    "obsidian": "^1.12.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@elo/core": "workspace:*"
+  }
+}

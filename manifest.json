@@ -1,0 +1,10 @@
+{
+  "id": "elo-obsidian-quiz-plugin",
+  "name": "Elo Quiz Plugin",
+  "version": "0.0.2",
+  "minAppVersion": "0.15.0",
+  "description": "Obsidian plugin for Quiz and Chat functionality",
+  "author": "Joshua",
+  "authorUrl": "https://github.com/jesuscarsan",
+  "isDesktopOnly": false
+}
